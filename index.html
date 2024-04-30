@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--    Sevval Yavuz    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renkli Blok Toplama Oyunu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--    Sevval Yavuz    -->
+    <div id="startScreen" class="container">
+        <h1>BlockRunner</h1>
+        <p><b>Lütfen hangi bloğu hareket ettirmek istediğinizi seçin:</b></p>
+        <div class="options">
+            <div class="block" onclick="startGame('aqua')" style="background-color: aqua;"></div>
+            <div class="block" onclick="startGame('pink')" style="background-color: pink;"></div>
+            <div class="block" onclick="startGame('purple')" style="background-color: purple;"></div>
+        </div>
+        <h3>Oyunun Amacı</h3>
+        <p>Oyundaki amacımız seçtiğimiz bloğun renginden blokları yakalayıp can ve para toplamak.</p>
+        <p>Fakat dikkat ! Siyah bloklardan ve kendi renginiz dışındaki bloklardan kaçmalısınız.</p>
+        <p>Siyah bloklara değdiğiniz an oyun biter. Kendi renginiz dışındaki bloklara değdinizde ise bir can azalır. Canınız bittiğinde oyun biter.</p>
+        <h3>Nasıl Oynanır ?</h3>
+        <p>Hareket için WASD tuşlarını veya yön tuşlarını kullanın.</p>
+        <p>(E) tuşuyla 4 para karşılığı bloklardan kaçmak için hızınızı 2 katına çıkarın.</p>
+        <p>(R) tuşuyla 3 para karşılığı bloklardan kaçmak için boyutunuzu yarıya düşürün.</p>
+
+    </div>
+
+    <div id="gameScreen" class="container" style="display: none;">
+        <div id="gameScreen" class="canvas-container">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+    </div>
+
+    
+
+    <script src="newscript.js"></script>
+</body>
+</html>
+
+<!--    Sevval Yavuz    -->
